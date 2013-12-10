@@ -1,0 +1,248 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {background-image: url(img/cell.png);}
+a {
+	color:#8D8D8D;
+}
+.wrap {
+		margin: auto;
+		width: 980px;
+		font:12pt tahoma;
+		color: #8D8D8D;
+		background: #FFF;
+}
+.header {	
+	padding: 40px;
+	overflow: hidden;
+	margin-top: -8px;
+}
+	.logo {
+		background-image: url(img/logo.png);
+		width: 215px;
+		height: 90px;
+		float: left;
+		}
+	.header__tel{
+		width: 429px;
+		height: 46px;
+		margin: 15px 0;
+		float: left;
+		text-align: center;
+		background: url(img/phone.png) no-repeat 18% 46%;
+		color: #000;
+	}
+
+	.header__tell-ind {
+		font: 12pt tahoma;
+	}
+	.header__tell-num {
+		font: 32pt georgia;
+		vertical-align: middle;
+		
+	}
+	.header__btn{
+		float: right;
+		text-decoration: none;
+		font: italic 16pt georgia;
+		color: #fff;
+		border-radius: 5px;
+		padding: 16px 42px 16px 20px; 
+		margin: 17px 0;
+		background: url(img/check.png) no-repeat 93% 50% #8BC645;
+		line-height: 1; /*для того что бы сбросить стандартный. У каждового текстового блока есть свой лайн-хейт, он влияет на высоту блока*/
+	}
+		.header__btn:hover{
+			background: url(img/check.png) no-repeat 93% 50% #4ca547;
+		}
+.nav {
+		position: relative;
+		background:url(img/nav.png);
+		margin-top: 0;
+	}
+.nav div {
+	position: absolute;
+}
+.nav__center:before {
+	content:"";
+	position: absolute;
+	left:-19px;
+	height: 67px;
+	width: 19px;
+	background: url(img/nav-left.png);
+	top:0;
+}
+.nav__center:after {
+	content:"";
+	position: absolute;
+	right:-19px;
+	height: 67px;
+	width: 19px;
+	background: url(img/nav-right.png);
+	top:0;
+}
+.nav__center{
+		margin: 0px;	
+		height: 47px;
+		width: 980px
+	}
+	.nav__center ul {
+		list-style: none;
+		margin: 0;
+		padding: 0px 40px;	
+			
+	}
+	.nav__center li {
+		float: left;
+		padding: 0;
+		display: inline-block;
+		margin: 0 0;
+		position: relative;
+	}
+	.nav__center li:before {     /* Добавляю палочки в меню */
+		content:"";
+		position: absolute;
+		left:-3px;
+		height: 23px;
+		width: 3px;
+		background: url(img/nav-l.png);
+		top:13px;	
+	}
+	.nav__center li:first-child:before{ /* Убрал первую палочку */
+		background:none;
+	}
+	.nav__center li a{
+		display: block; 
+		padding: 12px 11px;
+		font: 13pt tahoma;
+		color: #fff;
+		margin: 0px 0px;		
+			}
+	.nav__center li a:hover{
+		background: #f04;
+		text-decoration: none;
+	}
+.page {
+	padding: 40px 40px 5px;
+	line-height: 20pt;
+}
+	.breadcrumb {
+		list-style: none;
+		padding: 0;
+		margin: 0;	
+		margin-bottom: 20px;	
+	}
+		h1{margin-bottom: 20px;}
+		.breadcrumb li{
+			display: inline;
+			font-style: italic;
+			background: none !important;
+			padding-left: 0 !important;
+			margin-left: 0 !important;
+		}
+			.breadcrumb li a{
+				color: #7F9DB7;
+				font-style: italic;
+			}
+	.page div a{
+		font-style: italic;
+		color: #25709F;
+		font-weight: 500;
+	}
+	.page h1{
+		color: #000;
+		font: 18pt georgia;
+	}
+	strong {
+		color: #333232;
+	}
+	.page li {
+		list-style:none;
+		background: url(img/item.png) no-repeat 0px 11px;
+    	padding-left: 20px;
+	}
+	.page p{margin-bottom: 30px;}
+.footer {
+	padding: 40px;
+	width: 900px;
+	position: relative;
+	overflow: hidden;
+}
+	.footer:before {
+		content:"";
+		position: absolute;
+		left:40px;
+		height: 1px;
+		width: 900px;
+		background:url(img/foot.png);
+		top:0;}	
+	.footer__logo{
+		height: 66px;
+		width: 177px;
+		float: left;
+		background: url(img/logo_bot.png);
+		
+	}
+	.footer__cont{
+		float: left;
+		margin-bottom: 20px;
+		background: url(img/phone.png) no-repeat 9% 46%;
+	}
+		.footer__cont-ind {
+			font-size: 9px;
+			vertical-align: 4px;
+			padding: 0px 5px 0px 85px;
+		}
+		.footer__cont-num {
+			font-size: 18px;
+		}
+		.footer__cont-adr {
+			padding: 0 0 0 115px;
+		}
+	.footer__link{
+		float: left;
+		height: 44px;
+		background: url(img/mail.png) no-repeat 8.7% 22%;
+	}	
+		.footer__link-mail{
+			padding: 0 40px 0 85px;
+			
+		}
+		.footer__link-mail:hover{
+			text-decoration: none;
+		}
+		.footer__link-con{
+			display: inline;
+		}
+		.footer__link-con a:first-child:before
+		{
+			background:none;
+		}
+			.footer__link-con a{
+				padding: 0 10px 0 4px;
+				position: relative;
+			}
+			.footer__link-con a:hover{
+				text-decoration: none;
+			}
+			.footer__link-con a:before {content:"";
+			position: absolute;
+			left:-6px;
+			top:5px;
+			height: 12px;
+			width: 3px;
+			background:url(img/foot2.png);}
+			
+	.footer__cop{
+		float: left;
+		padding-top: 40px;
+	}
+	.footer__rask{
+		float: right;
+		padding: 40px 0 0 30px;
+		background: url(img/rask.png) no-repeat 0% 100%;
+	}
+	.footer__rask a:hover{
+		text-decoration: none;
+	}
